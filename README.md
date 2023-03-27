@@ -8,7 +8,7 @@ The data is preprocessed and saved as a pickle file
 
 **2. Reward Model Training**
 
-Trains reward model based on GPTNeo 125M.
+Running rm_training.ipynb trains reward model based on GPTNeo 125M.
 
 Preferred response:
 1. ELI5: answers with most votes
@@ -16,6 +16,6 @@ Preferred response:
 
 **3. Supervised Fine Tuning**
 
-Applys fine-tuning on pre-trained GPTNeo model based on question + preferred answer
+Running sft.ipynb applys fine-tuning on pre-trained GPTNeo model based on question + preferred answer
 
 Validation and Test Metrics are rewards given by Reward Model trained in 2.
